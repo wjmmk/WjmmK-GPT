@@ -2,19 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>WjmmK~GPT</title>
+
+    <style>
+        #chat-area {
+            margin: 0 auto;
+            width: 80%;
+            height: 500px;
+            overflow:scroll;
+            border: 1px solid gray;
+            border-radius: 4px;
+            margin: 15px;
+        }
+
+        .input {            
+            width: 100%;
+        }
+
+        .submit-area{
+            justify-content: center;
+            display: flex;
+            margin: 20px auto;
+            width: 80%;            
+        }       
+
+        textarea {
+            width: 80%;
+            margin-left: 14px;
+        }
+
+        .box {
+            width: 96%;
+            margin: 0 auto;
+            padding: 10px 10px;
+            background-color: #C4DBFE;
+            margin: 10px auto;            
+        }
+
+        .answer {
+            background-color: aquamarine;
+        }
+
+        button {
+            background-color: #004089;
+            color: white;
+            padding: 10px 10px;
+            border-radius: 5px;
+            border: none;
+            margin-left: 14px;
+        }
+    </style>
+
 </head>
 <body>
-    <div id="chat-area">
-
+    <div class="area" id="chat-area">
+    
     </div>
 
     <div class="submit-form">
         <div class="input">
             <textarea name="input" id="input" cols="40" rows="3"></textarea>
-            <button id="btn">Submit</button>
         </div>    
+        <button id="btn">Submit</button>
     </div>    
 </body>
 </html>
