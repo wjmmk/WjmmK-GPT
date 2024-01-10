@@ -16,7 +16,7 @@ app.post('/', async (req, res)=> {
       const openFun=async()=>{
         const chatCompletion = await openai.chat.completions.create({
             model: "gpt-3.5-turbo",
-            messages: [{"role": "user", "content": 'Who is Will Smith'}],
+            messages: [{"role": "user", "content": req.body.question}],
           });
           console.log(chatCompletion.choices[0].message.content);
        }
